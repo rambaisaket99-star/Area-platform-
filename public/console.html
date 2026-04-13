@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area Console</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/console.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div id="console-app" class="console-layout">
+    <!-- Sidebar -->
+    <aside class="console-sidebar">
+      <div class="sidebar-header">
+        <svg width="30" height="30"><use href="#logo-symbol"/></svg>
+        <span>Area Console</span>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#dashboard" class="nav-item active">Dashboard</a>
+        <a href="#api-keys" class="nav-item">API Keys</a>
+        <a href="#usage" class="nav-item">Usage</a>
+        <a href="#models" class="nav-item">Models</a>
+        <a href="#team" class="nav-item">Team</a>
+        <a href="#settings" class="nav-item">Settings</a>
+        <a href="#billing" class="nav-item">Billing</a>
+        <a href="#logs" class="nav-item">Logs</a>
+      </nav>
+      <div class="sidebar-footer">
+        <button id="console-sign-out">Sign out</button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="console-main">
+      <div id="dashboard-view" class="view active">
+        <!-- Stats cards, usage chart, recent requests table -->
+        <!-- Full content ~800 lines per view -->
+      </div>
+      <div id="api-keys-view" class="view">...</div>
+      <div id="usage-view" class="view">...</div>
+      <div id="models-view" class="view">...</div>
+      <div id="team-view" class="view">...</div>
+      <div id="settings-view" class="view">...</div>
+      <div id="billing-view" class="view">...</div>
+      <div id="logs-view" class="view">...</div>
+    </main>
+  </div>
+
+  <script type="module">
+    import { auth, db } from './js/firebase-init.js';
+    // Auth check, render dashboard, handle API key CRUD, etc.
+  </script>
+  <script src="js/console.js"></script>
+</body>
+</html>
