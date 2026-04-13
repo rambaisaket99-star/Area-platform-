@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing - Area</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="pricing-page">
+  <nav class="navbar">
+    <div class="nav-brand" onclick="window.location.href='index.html'">
+      <svg width="30" height="30" viewBox="0 0 100 100"><use href="assets/logo.svg#butterfly"/></svg>
+      <span>Area</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="console.html">Console</a>
+      <a href="docs.html">Docs</a>
+      <a href="pricing.html" class="active">Pricing</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-actions">
+      <button class="btn-outline" onclick="window.location.href='contact.html'">Contact sales</button>
+      <button class="btn-primary" onclick="window.location.href='console.html'">Sign in</button>
+    </div>
+  </nav>
+
+  <main class="pricing-container">
+    <section class="pricing-hero">
+      <span class="s-label">Pricing</span>
+      <h1>Simple, transparent pricing</h1>
+      <p class="pricing-sub">Start for free. Scale as you grow. No hidden fees.</p>
+    </section>
+
+    <div class="pricing-grid">
+      <!-- Free Tier -->
+      <div class="pricing-card">
+        <div class="plan-name">Free</div>
+        <div class="plan-price">$0 <span>/month</span></div>
+        <p class="plan-desc">For individuals exploring Area</p>
+        <ul class="plan-features">
+          <li>✓ 100 messages / day</li>
+          <li>✓ Access to base models</li>
+          <li>✓ Community support</li>
+          <li>✓ Standard API rate limits</li>
+        </ul>
+        <button class="btn-outline">Get started</button>
+      </div>
+
+      <!-- Pro Tier (Featured) -->
+      <div class="pricing-card featured">
+        <div class="plan-badge">Most Popular</div>
+        <div class="plan-name">Pro</div>
+        <div class="plan-price">$20 <span>/month</span></div>
+        <p class="plan-desc">For professionals and growing teams</p>
+        <ul class="plan-features">
+          <li>✓ Unlimited messages</li>
+          <li>✓ All models including latest</li>
+          <li>✓ Priority API access</li>
+          <li>✓ Workbench & prompt tools</li>
+          <li>✓ Email support</li>
+          <li>✓ Team collaboration (up to 5 seats)</li>
+        </ul>
+        <button class="btn-primary">Start free trial</button>
+      </div>
+
+      <!-- Enterprise Tier -->
+      <div class="pricing-card">
+        <div class="plan-name">Enterprise</div>
+        <div class="plan-price">Custom</div>
+        <p class="plan-desc">For large organizations with advanced needs</p>
+        <ul class="plan-features">
+          <li>✓ Everything in Pro</li>
+          <li>✓ Dedicated capacity & SLA</li>
+          <li>✓ SSO, audit logs, DLP</li>
+          <li>✓ Custom fine‑tuning</li>
+          <li>✓ On‑premise deployment</li>
+          <li>✓ Dedicated account manager</li>
+        </ul>
+        <button class="btn-outline" onclick="window.location.href='contact.html'">Contact sales</button>
+      </div>
+    </div>
+
+    <section class="pricing-faq">
+      <h2>Frequently asked questions</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>What counts as a message?</h4>
+          <p>A message is any API call to the /messages endpoint, including user input and model response tokens.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Can I upgrade or downgrade anytime?</h4>
+          <p>Yes. You can change plans at any time from the Console. Prorated charges apply.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Do you offer annual discounts?</h4>
+          <p>Yes, we offer 20% off with annual billing. Contact sales for enterprise agreements.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Is my data used for training?</h4>
+          <p>No. We do not train models on customer data without explicit opt‑in.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <svg width="24" height="24" viewBox="0 0 100 100"><use href="assets/logo.svg#butterfly"/></svg>
+        <span>Area</span>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+      <div class="footer-copy">© 2025 Area. All rights reserved.</div>
+    </div>
+  </footer>
+</body>
+</html>
