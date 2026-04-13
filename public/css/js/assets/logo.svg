@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="g1" cx="28%" cy="28%" r="72%"><stop offset="0%" stop-color="#fff"/><stop offset="100%" stop-color="#9ab4ec"/></radialGradient>
+    <radialGradient id="g2" cx="72%" cy="28%" r="72%"><stop offset="0%" stop-color="#fff"/><stop offset="100%" stop-color="#9ab4ec"/></radialGradient>
+    <radialGradient id="g3" cx="28%" cy="72%" r="72%"><stop offset="0%" stop-color="#fff"/><stop offset="100%" stop-color="#7ba4e8"/></radialGradient>
+    <radialGradient id="g4" cx="72%" cy="72%" r="72%"><stop offset="0%" stop-color="#fff"/><stop offset="100%" stop-color="#7ba4e8"/></radialGradient>
+  </defs>
+  <symbol id="butterfly" viewBox="0 0 100 100">
+    <path d="M50 45C43 25,17 16,10 30C4 43,18 62,50 49Z" fill="url(#g1)"/>
+    <path d="M50 45C57 25,83 16,90 30C96 43,82 62,50 49Z" fill="url(#g2)"/>
+    <path d="M50 54C38 58,16 71,21 82C27 91,44 86,50 60Z" fill="url(#g3)"/>
+    <path d="M50 54C62 58,84 71,79 82C73 91,56 86,50 60Z" fill="url(#g4)"/>
+    <ellipse cx="50" cy="51" rx="2.2" ry="9" fill="#c4d4f2" opacity=".85"/>
+  </symbol>
+</svg>
