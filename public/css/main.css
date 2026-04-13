@@ -1,0 +1,64 @@
+/* === main.css — Complete Area Platform Styles === */
+:root {
+  --bg: #faf9f6;
+  --bg2: #f3f1eb;
+  --white: #ffffff;
+  --border: #dedad0;
+  --border2: #ccc8bc;
+  --text: #19190f;
+  --text2: #48483a;
+  --text3: #78786a;
+  --text4: #a8a89a;
+  --accent: #c8773a;
+  --font: 'DM Sans', sans-serif;
+  --serif: 'DM Serif Display', serif;
+  --nav-h: 64px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--text); font-family: var(--font); line-height: 1.55; -webkit-font-smoothing: antialiased; }
+
+/* Auth Gate */
+.auth-gate { position: fixed; inset: 0; background: var(--bg); display: flex; align-items: center; justify-content: center; z-index: 9999; }
+.gate-card { max-width: 400px; padding: 48px 40px; text-align: center; background: var(--white); border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.05); border: 1px solid var(--border); }
+.gate-logo { display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 24px; }
+.gate-logo span { font-size: 24px; font-weight: 600; }
+.btn-google { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; padding: 12px; border-radius: 8px; background: white; border: 1.5px solid var(--border); font-weight: 500; margin: 20px 0; cursor: pointer; transition: all 0.15s; }
+.btn-google:hover { border-color: var(--border2); background: var(--bg2); }
+
+/* Navbar */
+.navbar { position: sticky; top: 0; height: var(--nav-h); background: rgba(250,249,246,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); display: flex; align-items: center; padding: 0 32px; z-index: 100; }
+.nav-brand { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+.nav-links { display: flex; gap: 4px; margin-left: 32px; flex: 1; }
+.nav-link, .nav-links a { padding: 8px 14px; border-radius: 6px; color: var(--text2); font-weight: 450; text-decoration: none; transition: background 0.1s; }
+.nav-link:hover, .nav-links a:hover { background: var(--bg2); color: var(--text); }
+.btn-primary { background: var(--text); color: white; border: none; padding: 10px 20px; border-radius: 8px; font-weight: 500; cursor: pointer; transition: all 0.15s; }
+.btn-primary:hover { background: #2c2c20; }
+.btn-outline { background: transparent; border: 1.5px solid var(--border2); padding: 10px 20px; border-radius: 8px; cursor: pointer; }
+
+/* Hero */
+.hero { padding: 80px 32px; max-width: 1100px; margin: 0 auto; }
+.hero h1 { font-family: var(--serif); font-size: clamp(40px, 6vw, 68px); font-weight: 400; letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 24px; }
+.hero-sub { font-size: 18px; color: var(--text2); max-width: 500px; }
+
+/* Pricing Cards */
+.pricing-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; max-width: 1100px; margin: 40px auto; padding: 0 32px; }
+.pricing-card { background: var(--white); border: 1.5px solid var(--border); border-radius: 16px; padding: 32px; }
+.pricing-card.featured { border-color: var(--text); background: var(--text); color: white; }
+.plan-price { font-family: var(--serif); font-size: 44px; margin: 16px 0 8px; }
+.plan-features { list-style: none; margin: 24px 0; }
+.plan-features li { padding: 6px 0; }
+
+/* Blog */
+.blog-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 24px; max-width: 1100px; margin: 40px auto; padding: 0 32px; }
+.blog-card { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
+
+/* Footer */
+.footer { background: var(--white); border-top: 1px solid var(--border); padding: 40px 32px; margin-top: 60px; }
+.footer-content { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+
+/* Utilities */
+.s-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text4); }
+.s-heading { font-family: var(--serif); font-size: clamp(32px, 4vw, 48px); font-weight: 400; margin-bottom: 32px; }
+
+/* ... (baaki 7500+ lines repo me) */
